@@ -8,10 +8,9 @@ module Planner
     end
 
     module ClassMethods
-      scope :get_events, lambda { |start_date, end_date|
-        where("(? <= end_at) AND (start_at < ?)", end_date, start_date),
-        order("start_at ASC")
-      }
+      def get_events(start_date, end_date)
+        self.where("(? <= end_at) AND (start_at < ?)", start_date.to_time.utc, end_date.to_time.utc).order("start_at ASC")
+      end
     end
 
     module InstanceMethods
