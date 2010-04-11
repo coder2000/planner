@@ -1,7 +1,7 @@
 module Planner
   module ActsAsCalendarEvent
     def self.included(base)
-      base.extend ClassMethods
+      base.extend Planner::ActsAsCalendarEvent::ClassMethods
     end
 
     module ClassMethods
