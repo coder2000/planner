@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{planner}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dieter Lunn"]
-  s.date = %q{2010-04-09}
+  s.date = %q{2010-04-11}
   s.description = %q{Planning calendar with events}
   s.email = %q{coder2000@gmail.com}
   s.extra_rdoc_files = [
@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
      "README",
      "Rakefile",
      "VERSION",
-     "lib/planner.rb"
+     "lib/planner.rb",
+     "lib/planner/acts_as_calendar_event.rb"
   ]
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
